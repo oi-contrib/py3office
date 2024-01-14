@@ -1,0 +1,9 @@
+v0.1.1:
+    date:2024-01-14
+    changes:
+      - 初始化版本
+        1、py3office.handler
+            * listFile 遍历所有文件
+            * printList 打印列表
+        2、py3office.pdf
+            * toImage 把pdf转成图片
