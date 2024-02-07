@@ -4,3 +4,4 @@ include CHANGELOG
 include AUTHORS.txt
 include .mailmap
 include logo.jpeg
+include docs/*

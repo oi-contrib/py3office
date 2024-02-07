@@ -7,3 +7,19 @@ v0.1.1:
             * printList 打印列表
         2、py3office.pdf
             * toImage 把pdf转成图片
+v0.2.0:
+    date:2024-02-07
+    changes:
+      - 优化改造
+        1、py3office.handler
+            * listFile回调callback形参补充 "文件名称name" 和 "仅文件名onlyname"
+            * printList兼容多层结构
+      - 新增功能
+        1、py3office.handler
+            * listFolder 遍历所有文件夹
+            * getFiles 获取所有子文件
+            * copy 复制文件或文件夹
+            * write 文本写入文件
+        2、py3office.pdf
+            * toWord 把pdf转成word
+            * logInfo 打印pdf内容

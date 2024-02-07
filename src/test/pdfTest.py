@@ -1,15 +1,31 @@
 #!/usr/bin/python3
+# coding=utf-8
 
-from py3office import pdf
-from py3office import handler
+from ..py3office import pdf, handler
 
-# print(pdf)
+"""
+打印信息
+"""
 
-# def getName(name, texts, index, total):
-#     print(name, texts, index, total)
-#     return name+"_new"
-# pdf.toImage("./data/demo.pdf","./data",getName)
-# pdf.toImage("./data/参保证明-1.10/江西/饶群-社保证明.pdf", "./data/参保证明-1.10/江西")
+
+def logInfoTest():
+    pdf.logInfo("./data/demo.pdf", False)
+    # pdf.logInfo("./data/demo.pdf", True)
+
+
+"""
+PDF转图片
+"""
+
+
+def getName(name, texts, index, total):
+    print(name, texts, index, total)
+    return name + "_new"
+
+
+def toImageTest():
+    pdf.toImage("./data/demo.pdf", "./data", getName)
+
 
 sourcePath = "./data/demo"
 targetPath = "./data/image"
@@ -41,4 +57,19 @@ def doit(fileInfo):
         )
 
 
-handler.listFile(sourcePath, doit)
+def toImagesTest():
+    handler.listFile(sourcePath, doit)
+
+
+"""
+PDF转Word
+"""
+
+
+def getName3(name, pages):
+    print(name, pages)
+    return name
+
+
+def toWordTest():
+    pdf.toWord("./data/demo.pdf", "./data", getName3)
