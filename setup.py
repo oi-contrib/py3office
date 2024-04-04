@@ -4,7 +4,7 @@ from setuptools import setup
 
 readmeFile = open("README.md", "r", encoding="utf-8")
 long_description = readmeFile.read().replace(
-    "./docs/", "https://github.com/fragement-contrib/py3office/blob/master/docs/"
+    "./docs/", "https://github.com/zxl20070701/py3office/blob/master/docs/"
 )
 readmeFile.close()
 
@@ -12,7 +12,7 @@ readmeFile.close()
 
 setup(
     name="py3office",
-    version="0.2.0",
+    version="0.3.0",
     description="提供python3版本的自动化办公常用处理方法",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -22,7 +22,7 @@ setup(
     maintainer_email="1904314465@qq.com",
     package_dir={"": "src"},
     packages=["py3office"],
-    url="https://github.com/fragement-contrib/py3office",
+    url="https://github.com/zxl20070701/py3office",
     license="MIT",
     keywords=["pdf", "office", "python3"],
     classifiers=[
@@ -30,5 +30,10 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_requires=["PyMuPDF>=1.23.16", "pdf2docx>=0.5.8"],
+    install_requires=[
+        "PyMuPDF>=1.23.16",
+        "pdf2docx>=0.5.8",
+        "cnocr>=2.3.0.1",
+        "onnxruntime>=1.17.1",
+    ],
 )

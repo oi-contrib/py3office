@@ -23,3 +23,9 @@ v0.2.0:
         2、py3office.pdf
             * toWord 把pdf转成word
             * logInfo 打印pdf内容
+v0.3.0:
+    date:2024-04-04
+    changes:
+      - 新增功能
+        1、py3office.ocr
+            * toTexts 图片变成列表

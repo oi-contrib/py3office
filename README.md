@@ -1,11 +1,11 @@
 <img src="./logo.jpeg" />
 
-# [py3office](https://github.com/fragement-contrib/py3office)
+# [py3office](https://github.com/zxl20070701/py3office)
 ⏰ 提供python3版本的自动化办公常用处理方法
 
 <p>
-    <a href="https://github.com/fragement-contrib/py3office" target='_blank'>
-        <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/fragement-contrib/py3office?style=social">
+    <a href="https://github.com/zxl20070701/py3office" target='_blank'>
+        <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/zxl20070701/py3office?style=social">
     </a>
 </p>
 
@@ -21,6 +21,7 @@ pip3 install py3office
 
 - [handler 基本辅助相关](./docs/handler.md)
 - [PDF文件相关操作](./docs/pdf.md)
+- [OCR相关操作](./docs/ocr.md)
 
 ## 版权
 
